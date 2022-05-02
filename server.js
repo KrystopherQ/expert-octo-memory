@@ -15,3 +15,17 @@ const db = mysql.createConnection({
     },
     console.log(``)
 );
+
+
+
+
+
+
+
+
+
+
+
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
