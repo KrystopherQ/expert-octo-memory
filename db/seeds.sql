@@ -1,5 +1,5 @@
 USE company_db;
-INSERT INTO department  (department, id)
+INSERT INTO department  (department_name, id)
 VALUES ("Management", 1),
        ("QA", 2),
        ("DevOps", 3),
@@ -15,7 +15,11 @@ VALUES ("Carol", 'Shelby', 1, NULL),
        ("Ken", 'Miles', 2, 1),
        ("Leo", 'Beebe', 3, 1),
 
-SELECT 
-employee.first_name,
+
+SELECT employee.first_name, employee.last_name, roles.title, roles.salary, department.department_name
+
+FROM employee
+JOIN roles ON employee.role_id = roles_id
+JOIN department ON roles.department_id = department.id
 
 
