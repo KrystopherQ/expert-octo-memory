@@ -65,50 +65,37 @@ const viewAllEmployees = () => {
 const addEmployee = () => {
     inquirer.prompt([{
             type: 'input',
-            message: "",
-            name: '',
+            message: "What is employees first name?",
+            name: 'firtsName',
+        },
+        {
+            type: 'list',
+            message: "What is their role?",
+            name: 'roles',
+            choices: []
         },
         {
             type: 'input',
-            message: "",
-            name: '',
-        },
-        {
-            type: 'input',
-            message: "",
-            name: '',
-        },
-        {
-            type: 'input',
-            message: "",
-            name: '',
+            message: "What is employees first name?",
+            name: 'firtsName',
         }
     ])
 }
 
 const updateEmployee = () => {
     inquirer.prompt([{
-            type: 'input',
-            message: "",
-            name: '',
+            type: 'list',
+            message: "Who would you like to update?",
+            name: 'people',
+            choices: []
 
         },
         {
-            type: 'input',
-            message: "",
-            name: '',
-        },
-        {
-            type: 'input',
-            message: "",
-            name: '',
-        },
-        {
-            type: 'input',
-            message: "",
-            name: '',
-        },
-
+            type: 'list',
+            message: "What is their new role?",
+            name: 'roles',
+            choices: []
+        }
     ])
 }
 
@@ -119,18 +106,19 @@ const viewAllRoles = () => {
 const addRole = () => {
     inquirer.prompt([{
             type: 'input',
-            message: "",
-            name: '',
+            message: "What is the title?",
+            name: 'title',
         },
         {
             type: 'input',
-            message: "",
-            name: '',
+            message: "What is the salary?",
+            name: 'salary',
         },
         {
-            type: 'input',
-            message: "",
-            name: '',
+            type: 'list',
+            message: "What is the department?",
+            name: 'departid',
+            choices: []
         },
         {
             type: 'input',
@@ -148,28 +136,11 @@ const viewAllDepartments = () => {
 
 const addDepartment = () => {
     inquirer.prompt([{
-            type: 'input',
-            message: "",
-            name: '',
+        type: 'input',
+        message: "What",
+        name: 'What department do you want to add?',
 
-        },
-        {
-            type: 'input',
-            message: "",
-            name: '',
-        },
-        {
-            type: 'input',
-            message: "",
-            name: '',
-        },
-        {
-            type: 'input',
-            message: "",
-            name: '',
-        },
-
-    ])
+    }])
 
 }
 
